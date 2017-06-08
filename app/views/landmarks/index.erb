@@ -2,6 +2,7 @@
 <h1>All Landmarks</h1>
 
 <%@landmarks.each do |landmark|%>
-  <%=landmark.name%>
-  <%=landmark.year_completed%>
+  <p>Name: <%=landmark.name%></p>
+  <p>Year Completed: <%=landmark.year_completed%></p>
+  <br>
 <%end%>

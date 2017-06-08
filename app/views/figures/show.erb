@@ -5,16 +5,20 @@
     <title>All figures</title>
   </head>
   <body>
-    <%= @figure.name %>
+
+    <h2>Figure Name: </h2>
+    <h3><%= @figure.name %></h2>
 
     <br></br>
 
+    <h3><%=@figure.name%>'s Landmarks:</h3>
     <% @figure.landmarks.each do |landmark| %>
     <%= landmark.name %>
     <% end %>
 
     <br></br>
 
+    <h3><%=@figure.name%>'s Titles:</h3>
     <% @figure.titles.each do |title| %>
     <%= title.name %>
     <% end %>

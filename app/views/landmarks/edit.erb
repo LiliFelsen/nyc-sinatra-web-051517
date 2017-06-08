@@ -7,13 +7,19 @@
   </head>
   <body>
     <h1>Edit Landmark</h1>
-    <br></br>
     <form action="/landmarks/<%=@landmark.id%>" method="post">
+      <h3>Name:</h3>
     <input type="text" name="landmark[name]" id="name" value="<%=@landmark.name%>">
+
     <br></br>
+
+      <h3>Year Completed:</h3>
     <input type="text" name="landmark[year_completed]" id="year_completed" value="<%=@landmark.year_completed%>">
+
     <br></br>
+
     <input type="submit" name="submit" value="Edit Landmark">
+
     <br></br>
     </form>
   </body>
